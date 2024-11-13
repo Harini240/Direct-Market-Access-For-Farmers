@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the Contact Page */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left side styling */
+.left-side {
+  width: 48%;
+  padding-right: 20px; /* Add space between left and right side */
+}
+
+.left-side h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: left; /* Left align the heading */
+}
+
+.left-side p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left; /* Left align the text */
+}
+
+.left-side a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.left-side a:hover {
+  text-decoration: underline;
+}
+
+/* Right side styling */
+.right-side {
+  width: 48%;
+}
+
+.right-side h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Status message */
+.status-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}

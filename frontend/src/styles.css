@@ -1,0 +1,144 @@
+/* Basic reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background for the page */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    color: #333; /* Default text color */
+}
+
+/* Header styling with new green color */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #4CAF50; /* Dark green color for header */
+    color: #0a0808;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+/* Welcome text styling */
+.welcome-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #100e0e; /* White font color */
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.nav-links a {
+    color: #0a0d10;
+    text-decoration: none;
+}
+
+.nav-links span {
+    color: #000;
+}
+
+/* Login/Sign Up button styling (blue) for both top right and forms */
+.login-signup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #050708; /* Blue background for button */
+    color: hwb(0 100% 0%); /* White font color */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-signup:hover {
+    background-color: #0056b3;
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Shared container styling for login and signup */
+.auth-container {
+    width: 80%; /* Wider container */
+    max-width: 800px; /* Max width increased */
+    padding: 30px; /* Increased padding for more spacious look */
+    background-color: #b4d3b4; /* Very light parrot green for subtle background */
+    border: 1px solid #6FFF6F; /* Parrot green border */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Input and button styling */
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff; /* Blue button background for both login and signup */
+    color: #fff; /* White font color */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: #050506;
+    color: #efecec;
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Styling for New user sign-up text */
+.new-user {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-user:hover {
+    text-decoration: underline;
+}
