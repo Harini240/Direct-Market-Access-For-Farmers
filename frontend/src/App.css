@@ -1,0 +1,234 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7, #ecfeff);
+  min-height: 100vh;
+  color: #1f2933;
+}
+
+/* Reusable Page Container */
+.page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #166534;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.05rem;
+  color: #374151;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+/* Form Card */
+.form-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  background: linear-gradient(135deg, #14532d, #166534);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #86efac;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #86efac;
+}
+
+/* Dashboard Cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Market Cards */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.market-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.market-card:hover {
+  transform: scale(1.04);
+}
+
+.market-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.market-card-content {
+  padding: 15px;
+}
+
+/* Footer */
+.footer {
+  background: #14532d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}

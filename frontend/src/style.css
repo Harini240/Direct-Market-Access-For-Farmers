@@ -1,0 +1,7 @@
+
+body { margin:0; font-family:Arial; background:#f5fff0; }
+.nav { display:flex; justify-content:space-between; padding:15px; background:green; }
+.nav a { color:white; margin:0 10px; text-decoration:none; }
+.page { padding:40px; text-align:center; }
+input { display:block; margin:10px auto; padding:8px; }
+button { padding:8px 20px; background:green; color:white; border:none; }
